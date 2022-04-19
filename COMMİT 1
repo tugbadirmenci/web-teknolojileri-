@@ -1,0 +1,140 @@
+<html lang="tr">
+
+<head>
+
+    <meta charset="UTF-8"> 
+
+    <title>Özgeçmiş</title>
+
+</head>
+
+<body>
+
+    <div class="özgeçmiş-içerik-alan">
+
+        <div class="özgeçmiş-alan" id="özgeçmiş-alan-1">
+
+            <div class="özgeçmiş-içerik" id="özgeçmiş-içerik-1">
+
+              
+
+                <h3> Hobiler</h3> <hr>            
+
+                <h4>Bisiklet Sürmek</h4>
+
+                <h4>Müzik Dinlemek</h4>
+
+                <h4>voleybol Oynamak</h4>
+
+                <br>
+
+                <h3>İletişim Bilgileri </h3> <hr>
+
+                <h4>Telefon: <br> 0537 219 70 28 </h4>
+          
+                <h4>E-Posta: <br> tugba.dirmenci@ogr.sakarya.edu.tr</h4>
+
+            </div>
+
+        </div>
+
+        <div class="özgeçmiş-alan" id="özgeçmiş-alan-2">
+
+            <div class="özgeçmiş-içerik">
+
+                <h1>Tuğba <br>  &emsp; &emsp14;Dirmenci</h1>
+
+            <h2>Kişisel Bilgiler</h2> <hr>
+
+            <h4>
+
+                <ul>
+
+                    <li>Doğum Tarihi : 09/08/2001</li>
+
+                    <li>Doğum yeri : Tekirdağ</li>
+
+                    <li>Medeni Durum : Bekar</li>                    
+
+                    <li>Sürücü Belgesi : B</li>
+
+                </ul>
+
+            </h4>
+
+            <h2>Eğitim Bilgileri</h2> <hr>
+
+            <h4>
+
+                <ul>
+
+                    <li>2015 - 2019 &nbsp; | &emsp; Çorlu İMKB Fen Lisesi  </li> 
+
+                    <li>2020 - ... &emsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |  &emsp; Sakarya Üniversitesi Biigisayar Mühendisliği</li>
+
+                </ul>
+
+            </h4>
+
+            <h2>Bilgisayar Bilgileri</h2> <hr>
+
+            <h4>
+
+                <ul>
+
+                    <li>C</li>
+
+                    <li>C#</li>
+
+                    <li>C++</li>
+
+                    <li>HTML</li>
+
+                    <li>CSS</li>
+
+                    <li>JavaScript</li>
+
+                </ul>
+
+            </h4>
+
+            </div>
+
+        </div>
+
+        <div class="özgemiiş-alan" id="özgeçmiş-alan-3">
+
+            <div class="özgeçmiş-içerik">
+
+                <ul>
+
+                    <h3>Diger sayfalar</h3>
+
+
+
+
+                    <li><a href="hakkımızda.html">HAKKIMIZDA</a> </li><br> 
+
+                    <li><a href="index.html">ŞEHRİM</a> </li> <br>
+
+                    <li><a href="mirasımız.html">MİRASIMIZ</a> </li><br>
+
+                    <li><a href="ilgialanlarim.html">İLGİ ALANLARIM</a> </li><br>
+
+                    <li><a href="iletişim.html">İLETİŞİM</a> </li><br>
+
+                    <li><a href="giriş.html">GİRİŞ</a></li>
+
+                    <a href=""></a><br>
+
+                </ul>   
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
