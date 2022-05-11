@@ -1,0 +1,1033 @@
+body
+{
+    background: linear-gradient(rgba(255,0,255,0.3),rgba(0,0,255,0.3));
+    margin: 0px;
+    padding: 0px;
+}
+/* menu css kodları*/
+
+#leftsidebar
+{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    top: -10px;
+    background-color: rgba(192,192,192,0.3);
+    left: -200px;
+    transition: all 0.5s linear;
+    z-index: 1;
+}
+#leftsidebar.active
+{
+    left: 0px;
+}
+#leftsidebar ul li
+{
+    cursor: pointer;
+    padding: 10px 10px;
+    list-style: none;
+    border-bottom: 0.5px ridge white;
+    transition: all 0.5s linear;
+
+}
+#leftsidebar ul  :hover 
+{
+    background-color: white;
+}
+#leftsidebar ul li a
+{
+    text-decoration: none;
+    font-family: sans-serif;
+    color:white;
+}
+.leftsidebutton
+{
+    position:absolute;
+    left: 200px;
+    top: 10px;
+}
+
+.leftsidebutton:before
+{
+    cursor: pointer;
+    padding: 5px 10px;
+    position: absolute;
+    content: "\f0c9";
+    font-family: FontAwesome;
+    font-size: 34px;
+    color: white;
+    background-color: rgba(58, 97, 126, 0.5);
+}
+.leftsidebutton:hover:before
+{
+    background-color: rgba(58, 97, 126, 0.5);
+    transition: all 0.5s linear;
+}
+/* hakkinda css kodlari */
+.menu-bar, .responsive-menu-bar
+{
+    margin-top: 2px;
+    display:flex;
+    flex-direction:row;
+    text-decoration-color: white;
+    justify-content: space-around;
+    word-wrap: break-word;
+}
+.menu li:hover a
+{
+    color:#ecd3f5;
+    background-color: white;
+}
+.responsive-menu-bar
+{
+    display: none;
+}
+.menu a ,.responsive-menu-bar a
+{
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    margin: 10px;
+    border-style: inset;
+    border-radius: 10px;
+    background-color: rgba(0,0,255,0.3);
+    box-shadow: 5px 5px 5px white;
+}
+.menu li:hover a
+{
+    background-color: white;
+}
+.menu-bar ul li  ,.responsive-menu-bar ul li
+{
+    list-style-type: none;
+    flex-direction: row;
+    display: inline-block;
+    text-decoration: none;
+}
+.içerik-alan
+{
+    width: 95%;
+    margin: 2%;
+    display: grid;
+    font-size: 20px;
+    grid-gap: 4%;
+    grid-template-columns: 15% 80%;
+}
+.içerik-kitap,.içerik-film,.içerik-hobi
+{
+    text-align: center;
+    border-style: dotted;
+    border-radius: 10%;
+    margin-top: 8%;
+}
+.içerik-kitap h3,.içerik-film h3,.içerik-hobi h3
+{
+    Border-bottom-style:dotted;
+    border-radius: 8%;
+    font-size: 20px;
+    margin-top: 2%;
+}
+.alt-alan
+{
+    position: relative;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+}
+.responsive-resim
+{
+    position: relative;
+    left: -11%;
+    width: 200%;
+    height: 200%;
+    display: none;
+}
+.hakkinda-resim-3, .hakkinda-resim-4, .hakkinda-resim-5 ,.hakkinda-resim-2,.hakkinda-resim-1
+{
+    position: relative;
+    left: -2%;
+    margin-top: -2%;
+    height: 100%;
+    border-radius: 20px;
+    margin-left: 4%;
+}
+.hakkinda-resim-3 img , .hakkinda-resim-4 img, .hakkinda-resim-5 img, .hakkinda-resim-2 img,.hakkinda-resim-1 img
+{
+    height: auto;
+    border-radius: 17px;
+    width: 100%;
+    height: 100%;
+}
+.alan
+{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    border-radius: 15px;
+
+}
+@media  only screen and (max-width:570px) , screen and (max-device-width:570px)
+{
+    .menu-bar
+    {
+        display: none;
+    }
+    .responsive-menu-bar
+    {
+        text-align: center;
+        display: block;
+    }
+    .içerik-alan
+    {
+        font-size: 8px;
+    }
+}
+@media  only screen and (max-width:440px) , screen and (max-device-width:440px)
+{
+    .responsive-menu-bar
+    {
+        position: relative;
+        left: -20px; 
+        display: grid;
+        grid-template-rows: 100px;
+        line-height: 25px;
+    }
+    .içerik-alan
+    {
+        position: relative;
+        top: 30px;
+    }
+    .içerik-film h3,.içerik-hobi h3,.içerik-kitap h3
+    {
+        font-size: 7px !important;
+    }
+    .içerik-film,.içerik-hobi,.içerik-kitap
+    {
+        font-size: 8px !important;
+    } 
+}
+@media only screen and (max-width:790px) ,screen and (max-device-width:790px)
+{
+    .menu a
+    {
+        font-size: 8px;
+        margin: 1px;
+        padding: 1px;
+
+    }
+    .içerik-alan
+    {
+        grid-template-columns: 20% 75%;
+    }
+    .menu-bar
+    {
+        text-align: center;
+        justify-content: space-around;
+
+    }
+    .içerik-film,.içerik-hobi,.içerik-kitap
+    {
+        font-size: 11px ;
+    }
+}
+@media  only screen and (max-width:992px) ,screen and (max-device-width:992px)
+{
+    .alt-alan
+    {
+        display: none;
+    }
+    .responsive-resim
+    {
+        display: block;
+    }
+    .hakkinda-resim-3, .hakkinda-resim-4, .hakkinda-resim-5 ,.hakkinda-resim-2, .hakkinda-resim-1
+    {
+
+        border-style: slider;
+        border-radius: 20px;
+        width: 50%;
+        height: 100px;
+        margin-top:5%;
+        margin-left: 5%;
+
+    }
+    .hakkinda-resim-3 img , .hakkinda-resim-4 img, .hakkinda-resim-5 img, .hakkinda-resim-2 img , .hakkinda-resim-1 img
+    {
+        height: auto;
+        border-radius: 17px;
+        width: 100%;
+        height: 100%;
+    }
+    .menu a
+    {
+        font-size: 12px;
+  
+    }
+    .içerik-alan
+    {
+        grid-template-columns: 20% 75%;
+    }
+    .menu-bar
+    {
+        justify-content: space-around;
+    }
+    .içerik-film,.içerik-hobi,.içerik-kitap
+    {
+        font-size: 13px;
+    }
+    .içerik-alan
+    {
+        font-size: 16px;
+    }
+}
+
+
+/*  özgeçmiş css kodları */
+
+.özgeçmiş-içerik-alan
+{
+    margin-top: 5%;
+    margin-left: 15%;
+    width: 75%;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    
+}
+.özgeçmiş-alan
+{
+    display: flex;
+    flex-direction: column;
+    border-style: inset;
+    
+    background-color: white;
+    word-wrap: break-word;
+}
+#özgeçmiş-alan-3
+{
+    position: relative;
+    left: 30px;
+}
+#özgeçmiş-alan-1
+{
+    position: relative;
+    left: 15px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.özgeçmiş-içerik
+{
+    color: pink;
+    margin: 20px;
+}
+.özgeçmiş-içerik img
+{
+    
+    margin-left: 8%;
+    margin-top: 6%;
+    border-radius: 30px;
+    height: 25%;
+    width: 80%;
+}
+#özgeçmiş-içerik-1 h3 , #özgeçmiş-içerik-1 h4 , #özgeçmiş-içerik-1 hr
+{
+    position: relative;
+    top: 60px;
+}
+.özgeçmiş-içerik h3
+{
+    font-size: 15px;
+}
+.özgeçmiş-içerik h4
+{
+    font-size: 10px;
+    text-decoration: none;
+    color: black;
+}
+.özgeçmiş-içerik h4 a
+{
+    font-size: 10px;
+    text-decoration: none;
+    color: pink;
+}
+.özgeçmiş-içerik h2
+{
+    font-size: 25px;
+}
+#özgeçmiş-içerik-1
+{
+    position: relative;
+    top: 10px;
+}
+.özgeçmiş-içerik ul li
+{
+    font-size: 15px;
+}
+#özgeçmiş-alan-3 ul
+{
+    background-color: white;
+    width: auto;
+    height: auto;
+    border-radius: 30px;
+    margin: 2%;
+}
+#özgeçmiş-alan-3 ul li a
+{
+    color: black;
+    text-decoration: none;
+}
+#özgeçmiş-alan-2
+{
+    background-color: rgb(128,128,128,0.5);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+@media screen and (max-width:1100px)
+{
+    .özgeçmiş-içerik ul li
+    {   
+        font-size: 10px;
+    }
+    .özgeçmiş-içerik h2
+    {
+        font-size: 20px;
+    }
+    .özgeçmiş-içerik h4
+    {
+        font-size: 13px;
+    }
+    .özgeçmiş-içerik h4
+    {
+        font-size: 8px;
+        text-decoration: none;
+        color: pink;
+    }
+}
+@media screen and (max-width:900px)
+{
+    .özgeçmiş-içerik ul li
+    {   
+        font-size: 10px;
+    }
+    .özgeçmiş-içerik h2
+    {
+        font-size: 15px;
+    }
+    .özgeçmiş-içerik h3
+    {
+        font-size: px;
+    }
+    #özgeçmiş-alan-3 ul
+    {
+        position: relative;
+        left: -40px; bottom: 20px;
+        width: 100%;
+    }
+    .özgeçmiş-içerik h4 a
+    {
+        font-size: 7px;
+        text-decoration: none;
+        color: pink;
+    }
+}
+@media screen and (max-width:650px)
+{
+    .özgeçmiş-içerik-alan
+    {
+        margin-left: -5px;
+        width: 100%;
+    }
+    #özgeçmiş-alan-3 ul
+    {
+        position: relative;
+        left: -50px; bottom: 20px;
+        width: 100%;
+    } 
+}
+
+/* sehrim css kodları */
+
+.sehrim-içerik-alan
+{
+    margin-top: 5%;
+    margin-left: 10%;
+    height: auto;
+    width: 75%;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    object-fit: cover;
+
+}
+.sehrim-baslık
+{
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 50px;
+}
+.sehrim-alan
+{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+.sehrim-içerik-2
+{
+    float: right;
+}
+.sehrim-içerik-1 h1
+{
+    text-align: center;
+    Color: white;
+}
+.sehrim-içerik-2
+{
+    position: relative;
+    left: 20%;
+    width: 110%;
+    background-color: white;
+    border-radius: 20px;
+    font-style: normal;
+}
+.sehrim-içerik-2 ul li a
+{
+    Color:black;
+    text-decoration: none;
+    
+}
+img
+{
+    width: 100%;
+    height: 300;
+}
+#slider
+{
+    position: relative;
+    margin: auto;
+    width: auto;
+    height: auto;
+    font: 19px sans-serif;
+    overflow: hidden;
+}
+#kontrol
+{
+    position: absolute;
+    right: 0px; 
+    top: 268px;
+}
+#kontrol a
+{
+    color: white;
+    background-color: rgb(0,0,0,0.5);
+    padding: 10px;
+    text-decoration: none;
+}
+/* mirasimiz css kodları*/
+
+header
+{
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.mirasimiz-içerik-alan
+{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    width: 90%;
+    margin: auto;
+}
+.mirasimiz-alan, .mirasimiz-alan-2
+{
+    display: flex;
+    flex-direction: column;
+}
+.mirasimiz-alan img
+{
+    border-radius: 10px;
+}
+.mirasimiz-içerik-1 h4
+{
+    font-size: 25px;
+}
+.mirasimiz-içerik-2 h4
+{
+    font-size: 20px;
+}
+.mirasimiz-içerik-1 img
+{
+    width: 45%;
+    height: 25vh;
+    float: left;
+    position: relative;
+    margin-right: 20px;
+    
+}
+.mirasimiz-içerik-2 img:nth-child(2)
+{
+    position: relative;
+    left: 2%;
+}
+.mirasimiz-içerik-2 img:nth-child(5)
+{
+    position: relative;
+    left: 2%;
+}
+.mirasimiz-içerik-2 img
+{
+    width: 48%;
+    height: 20vh;
+}
+.mirasimiz-içerik-3
+{
+    background-color:rgb(255,255,240);
+    border-radius: 30px;
+    
+}
+.mirasimiz-içerik-3 ul li a
+{
+    text-decoration: none;
+    color: black;   
+}
+.mirasimiz-içerik-3 ul li:hover a
+{
+    text-decoration: none;
+    color: white;   
+    box-shadow: 2px 8px 10px rgb(255,255,240);
+}
+.mirasimiz-alan-2
+{
+    position: relative;
+    top: 2%;
+    left: 8%;
+}
+#leftsidebar
+{
+    display: none;
+}
+
+@media screen and (max-width:850px)
+{
+    .mirasimiz-içerik-3 ul li 
+    {
+        font-size: 10px;
+    }
+    .mirasimiz-içerik-1 h4
+    {
+        font-size: 15px;
+    }
+    .mirasimiz-içerik-1 img
+    {
+        width: 200px;
+        height: 200px;
+    }
+    .mirasimiz-içerik-2 img
+    {
+        width: 230px;
+        height: 20vh;
+    }
+    .mirasimiz-içerik-2 h4
+    {   
+        font-size: 12px;
+    }
+    .mirasimiz-içerik-3 h3
+    {
+        font-size: 10px;
+        float: left;
+    }
+}
+@media screen and (max-width:650px)
+{
+    #leftsidebar
+    {
+        display: block;
+    }
+    .mirasimiz-alan-2
+    {
+        display: none;
+    } 
+    .mirasimiz-içerik-alan
+    {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .mirasimiz-içerik-1 img
+    {
+        width: 50%;
+        height: 150px;
+    
+    }
+    .mirasimiz-içerik-2 img
+    {
+        width: 48%;
+        height: 20vh;
+
+    }
+
+    .leftsidebutton:before
+    {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:400px)
+{
+ 
+    header
+    {
+        text-align: center;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+    .mirasimiz-içerik-1 h4
+    {
+        font-size: 10px;
+    }
+    .mirasimiz-içerik-1 img
+    {
+        width: 120px;
+        height: 80px;
+    }
+    .mirasimiz-içerik-2 img
+    {
+        width: 58%;
+        height: 20vh;
+    }
+    .mirasimiz-içerik-2 h4
+    {   
+        font-size: 8px;
+    }
+    .mirasimiz-içerik-3 h3
+    {
+        font-size: 10px;
+        float: left;
+    }
+    .leftsidebutton:before
+    {
+        font-size: 20px;
+    }
+}
+/* giriş css kodları*/
+body
+{
+    background: linear-gradient(rgba(7,63,104,0.3),rgba(7,63,104,0.7));
+    
+}
+.panel-kutu
+{
+    width: 30%;
+    height: 370px;
+    background: rgb(0,0, 0,.5);
+    color: #f1f1f1;
+    font-family: sans-serif;   
+    left: 50%;
+    top: 50%;
+    position:absolute;
+    transform: translate(-50%,-50%);
+    border-radius: 2px;
+    padding: 1%;
+}
+.panel-kutu h2
+{
+    text-align: center;
+    color: #fc6;
+    margin-top: 15%;
+
+}
+.panel-kutu p
+{
+    font-family: sans-serif;
+    color: #fc6;
+}
+.panel-kutu input
+{
+    width: 97%;
+    height: 25px;
+    padding: 3px;
+    
+}
+
+.panel-kutu input[type="email"],
+.panel-kutu input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: #fff;
+    font-size: 16px;
+}
+.panel-kutu input[type="submit"],
+.panel-kutu input[type="reset"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #f1f1f1;
+    font-size: 16px;
+    background: #f10fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.panel-kutu input[type="submit"]:hover,
+.panel-kutu input[type="reset"]:hover
+{
+    color: #f1f1f1;
+    background: #fc6;
+    transition: 500ms;
+    color: #222;
+}
+@media only screen and (max-width:1100px)
+{
+    ::placeholder
+    {
+        font-size: 60%;
+    }
+    .panel-kutu h2, .panel-kutu p
+    {
+        font-size: 80%;
+    }
+}
+@media only screen and (max-width:650px)
+{
+    .panel-kutu
+    {
+        height: 300px;
+        width: 210px;
+    }
+    .panel-kutu h2, .panel-kutu p
+    {
+        font-size: 60%;
+    }
+    ::placeholder
+    {
+        font-size: 35%;
+    }
+    .panel-kutu input[type="submit"],
+    .panel-kutu input[type="reset"]
+    {
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width:400px)
+{
+    .panel-kutu
+    {
+        height: 250px;
+        width: 180px;
+    }
+    .panel-kutu h2, .panel-kutu p
+    {
+        font-size: 50%;
+    }
+    ::placeholder
+    {
+        font-size: 28%;
+    }
+    .panel-kutu input[type="submit"],
+    .panel-kutu input[type="reset"]
+    {
+        font-size: 10px;
+        height: 30px;
+    }
+}
+@media only screen and (max-width:310px)
+{
+    
+    .panel-kutu
+    {
+        height: 210px;
+        width: 150px;
+    }
+    .panel-kutu h2, .panel-kutu p
+    {
+        font-size: 40%;
+    }
+ 
+    .panel-kutu input[type="submit"],
+    .panel-kutu input[type="reset"]
+    {
+        font-size: 8px;
+        height: 27px;
+    }
+    .panel-kutu input[type="email"],
+    .panel-kutu input[type="password"]
+    {
+        height: 20px;
+        font-size: 10px;
+    }
+}
+/* iletişim css kodlari */
+.iletişim-body {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 13px;
+    line-height: 30px;
+    color: #8f7789;
+    background: #fad9ed;
+}
+.container {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+} 
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea,
+#contact button[type="submit"] {
+    font: 500 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+ 
+#contact {
+    background: #F9F9F9;
+    padding: 25px;
+    margin: 100px 0;
+    box-shadow: 0 0 20px 0 rgb(221, 196, 255), 0 5px 5px 0 rgb(221, 196, 255);
+}
+ 
+#contact h2 {
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+ 
+.form-control{
+    border: none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+ 
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 20px;
+}
+ 
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact textarea:hover {
+    -webkit-transition: border-color 0.4s ease-in-out;
+    -moz-transition: border-color 0.4s ease-in-out;
+    transition: border-color 0.4s ease-in-out;
+    border: 1px solid #aaa;
+}
+ 
+#contact textarea {
+    height: 120px;
+    max-width: 100%;
+    resize: none;
+}
+ 
+#contact button[type="submit"],
+#contact button[type="reset"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #8a0354;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+ 
+#contact button[type="submit"]:hover,
+#contact button[type="reset"]:hover
+ {
+    background: #355C7D;
+    transition: background-color 0.4s ease-in-out;
+}
+ 
+#contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+ 
+#contact input:focus,
+#contact textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+}
+@media  only screen and (max-width:300px) 
+{
+    .form-control h3
+    {
+        font-size: 8px;
+        
+    }
+    #contact h2 {
+        display: block;
+        font-size: 20px;
+        
+    }
+}
+/* ilgi alanlarım css kodları */
+.ilgi-body
+{
+    background:  linear-gradient(rgba(7,63,104,0.1),rgba(7,63,104,0.7));;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+.results
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.result
+{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    height: 400px;
+    width: 300px;
+}
+.result img
+{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.buttons
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button
+{
+    background-color: rgb(7,63,104,.5);
+    border: 0;
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+}
+button:active
+{
+    transform: scale(0.98);
+}
+button:focus
+{
+    outline: none;
+}

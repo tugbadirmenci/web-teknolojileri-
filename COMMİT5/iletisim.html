@@ -1,0 +1,40 @@
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Resimler/logo.jpg" type="image/x-icon">
+    <title>iletişim</title>
+</head>
+<body class="iletişim-body">
+    <div class="container" name="girisFormu">
+        <form id="contact" action="mesaj.php" method="GET" onsubmit="return formkonrtol()">
+        <h2>İletişim Sayfası</h2>
+        <div class="form-control">
+        <input placeholder="Adınız Soyadınız" type="text" id="adsoyad" >
+        </div>     
+        <div class="form-control">
+        <input placeholder="Konu" type="text" id="konu">
+        </div>
+        <div class="form-control">
+            <input placeholder="E-Posta Adresiniz" type="text" id="eposta">
+            </div>
+        <div>
+            <h3>Cinsiyet : &ensp; <input type="radio" name="cinsiyet" value="erkek" > Erkek &emsp; &emsp;
+                <input type="radio" name="cinsiyet" value="kadin"checked > Kadın</h3>
+        </div>      
+        <div class="form-control">
+        <textarea  id="mesaj" cols="30" rows="10"></textarea>
+        </div>
+        <div class="form-control">
+        <button name="submit" type="submit" id="submit">GÖNDER</button>
+        </div>
+        <div class="form-control">
+        <button name="reset" type="reset" id="reset">TEMİZLE</button>
+        </div>
+        </form>
+        </div>
+        <script src="iletişim.js"></script>    
+</body>
+</html>
