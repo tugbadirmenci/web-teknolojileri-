@@ -1,2 +1,2 @@
 # web-teknolojileri-
-PROJE1
+Kendini Tanıttığın web sitesi 
